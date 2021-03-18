@@ -27,7 +27,7 @@ class _RandomWordsState extends State<RandomWords> {
     return ListView.builder(
         padding: EdgeInsets.all(16.0),
         itemBuilder: (context, i) {
-          if (1.isOdd) return Divider();
+          if (i.isOdd) return Divider();
 
           final index = i ~/ 2;
           if (index >= _suggestions.length) {
